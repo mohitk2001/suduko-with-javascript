@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suduko</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <button id="easy">Easy</button>
+      <button id="medium">Medium</button>
+      <button id="hard">Hard</button>
+    </div>
+    <div class="board">
+      <center>
+        <table class="outer">
+          <tbody>
+            <tr class="row1">
+              <td class="cell cell-1">
+                <input type="number"  id="c00" />
+              </td>
+              <td class="cell cell-2">
+                <input type="number"  id="c01" />
+              </td>
+              <td class="cell cell-3">
+                <input type="number"  id="c02" />
+              </td>
+              <td class="cell cell-4">
+                <input type="number"  id="c03" />
+              </td>
+              <td class="cell cell-5">
+                <input type="number"  id="c04" />
+              </td>
+              <td class="cell cell-6">
+                <input type="number"  id="c05" />
+              </td>
+              <td class="cell cell-7">
+                <input type="number"  id="c06" />
+              </td>
+              <td class="cell cell-8">
+                <input type="number"  id="c07" />
+              </td>
+              <td class="cell cell-9">
+                <input type="number"  id="c08" />
+              </td>
+            </tr>
+            <tr class="row2">
+              <td class="cell cell-10">
+                <input type="number"   id="c10" />
+              </td>
+              <td class="cell cell-11">
+                <input type="number"   id="c11" />
+              </td>
+              <td class="cell cell-12">
+                <input type="number"   id="c12" />
+              </td>
+              <td class="cell cell-13">
+                <input type="number"   id="c13" />
+              </td>
+              <td class="cell cell-14">
+                <input type="number"   id="c14" />
+              </td>
+              <td class="cell cell-15">
+                <input type="number"   id="c15" />
+              </td>
+              <td class="cell cell-16">
+                <input type="number"   id="c16" />
+              </td>
+              <td class="cell cell-17">
+                <input type="number"   id="c17" />
+              </td>
+              <td class="cell cell-18">
+                <input type="number"   id="c18" />
+              </td>
+            </tr>
+            <tr class="row3">
+              <td class="cell cell-19">
+                <input type="number"   id="c20" />
+              </td>
+              <td class="cell cell-20">
+                <input type="number"   id="c21" />
+              </td>
+              <td class="cell cell-21">
+                <input type="number"   id="c22" />
+              </td>
+              <td class="cell cell-22">
+                <input type="number"   id="c23" />
+              </td>
+              <td class="cell cell-23">
+                <input type="number"   id="c24" />
+              </td>
+              <td class="cell cell-24">
+                <input type="number"   id="c25" />
+              </td>
+              <td class="cell cell-25">
+                <input type="number"   id="c26" />
+              </td>
+              <td class="cell cell-26">
+                <input type="number"   id="c27" />
+              </td>
+              <td class="cell cell-27">
+                <input type="number"   id="c28" />
+              </td>
+            </tr>
+            <tr class="row4">
+              <td class="cell cell-28">
+                <input type="number"   id="c30" />
+              </td>
+              <td class="cell cell-29">
+                <input type="number"   id="c31" />
+              </td>
+              <td class="cell cell-30">
+                <input type="number"   id="c32" />
+              </td>
+              <td class="cell cell-31">
+                <input type="number"   id="c33" />
+              </td>
+              <td class="cell cell-32">
+                <input type="number"   id="c34" />
+              </td>
+              <td class="cell cell-33">
+                <input type="number"   id="c35" />
+              </td>
+              <td class="cell cell-34">
+                <input type="number"   id="c36" />
+              </td>
+              <td class="cell cell-35">
+                <input type="number"   id="c37" />
+              </td>
+              <td class="cell cell-36">
+                <input type="number"   id="c38" />
+              </td>
+            </tr>
+            <tr class="row5">
+              <td class="cell cell-37">
+                <input type="number"   id="c40" />
+              </td>
+              <td class="cell cell-38">
+                <input type="number"   id="c41" />
+              </td>
+              <td class="cell cell-39">
+                <input type="number"   id="c42" />
+              </td>
+              <td class="cell cell-40">
+                <input type="number"   id="c43" />
+              </td>
+              <td class="cell cell-41">
+                <input type="number"   id="c44" />
+              </td>
+              <td class="cell cell-42">
+                <input type="number"   id="c45" />
+              </td>
+              <td class="cell cell-43">
+                <input type="number"   id="c46" />
+              </td>
+              <td class="cell cell-44">
+                <input type="number"   id="c47" />
+              </td>
+              <td class="cell cell-45">
+                <input type="number"   id="c48" />
+              </td>
+            </tr>
+            <tr class="row6">
+              <td class="cell cell-46">
+                <input type="number"   id="c50" />
+              </td>
+              <td class="cell cell-47">
+                <input type="number"   id="c51" />
+              </td>
+              <td class="cell cell-48">
+                <input type="number"   id="c52" />
+              </td>
+              <td class="cell cell-49">
+                <input type="number"   id="c53" />
+              </td>
+              <td class="cell cell-50">
+                <input type="number"   id="c54" />
+              </td>
+              <td class="cell cell-51">
+                <input type="number"   id="c55" />
+              </td>
+              <td class="cell cell-52">
+                <input type="number"   id="c56" />
+              </td>
+              <td class="cell cell-53">
+                <input type="number"   id="c57" />
+              </td>
+              <td class="cell cell-54">
+                <input type="number"   id="c58" />
+              </td>
+            </tr>
+            <tr class="row7">
+              <td class="cell cell-55">
+                <input type="number"   id="c60" />
+              </td>
+              <td class="cell cell-56">
+                <input type="number"   id="c61" />
+              </td>
+              <td class="cell cell-57">
+                <input type="number"   id="c62" />
+              </td>
+              <td class="cell cell-58">
+                <input type="number"   id="c63" />
+              </td>
+              <td class="cell cell-59">
+                <input type="number"   id="c64" />
+              </td>
+              <td class="cell cell-60">
+                <input type="number"   id="c65" />
+              </td>
+              <td class="cell cell-61">
+                <input type="number"   id="c66" />
+              </td>
+              <td class="cell cell-62">
+                <input type="number"   id="c67" />
+              </td>
+              <td class="cell cell-63">
+                <input type="number"   id="c68" />
+              </td>
+            </tr>
+            <tr class="row8">
+              <td class="cell cell-64">
+                <input type="number"   id="c70" />
+              </td>
+              <td class="cell cell-65">
+                <input type="number"   id="c71" />
+              </td>
+              <td class="cell cell-66">
+                <input type="number"   id="c72" />
+              </td>
+              <td class="cell cell-67">
+                <input type="number"   id="c73" />
+              </td>
+              <td class="cell cell-68">
+                <input type="number"   id="c74" />
+              </td>
+              <td class="cell cell-69">
+                <input type="number"   id="c75" />
+              </td>
+              <td class="cell cell-70">
+                <input type="number"   id="c76" />
+              </td>
+              <td class="cell cell-71">
+                <input type="number"   id="c77" />
+              </td>
+              <td class="cell cell-72">
+                <input type="number"   id="c78" />
+              </td>
+            </tr>
+            <tr class="row9">
+              <td class="cell cell-73">
+                <input type="number"   id="c80" />
+              </td>
+              <td class="cell cell-74">
+                <input type="number"   id="c81" />
+              </td>
+              <td class="cell cell-75">
+                <input type="number"   id="c82" />
+              </td>
+              <td class="cell cell-76">
+                <input type="number"   id="c83" />
+              </td>
+              <td class="cell cell-77">
+                <input type="number"   id="c84" />
+              </td>
+              <td class="cell cell-78">
+                <input type="number"   id="c85" />
+              </td>
+              <td class="cell cell-79">
+                <input type="number"   id="c86" />
+              </td>
+              <td class="cell cell-80">
+                <input type="number"   id="c87" />
+              </td>
+              <td class="cell cell-81">
+                <input type="number"   id="c88" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </center>
+    </div>
+    <div class="validation">
+      <button id="validationButton">Validate</button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
